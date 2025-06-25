@@ -4,9 +4,14 @@
 <script src="{{ $jquery }}"  ></script>
 
 {{/*bootstrap 5.3*/}}
-{{ $bootstrap_js := "js/bootstrap5.3.min.js" | relLangURL }}
+{{/*
 <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.7/css/bootstrap.min.css" rel="stylesheet"   >
 <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.3.7/js/bootstrap.bundle.min.js"  ></script>
+*/}}
+{{ $bootstrap_css := "css/bootstrap5.3.min.css" | relLangURL }}
+{{ $bootstrap_js := "js/bootstrap5.3.min.js" | relLangURL }}
+<link href="{{ $bootstrap_css }}" rel="stylesheet"   >
+<script src="{{ $bootstrap_js }}"  ></script>
 
 
 {{/* fontawesome 6 */}}
