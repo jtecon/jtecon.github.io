@@ -1,0 +1,7 @@
+{{/* Progressive Web App (PWA) Icon */}}
+
+{{ $icon := resources.GetMatch "media/icon.png" }}
+{{ with $icon}}
+<link rel="icon" type="image/png" href="{{ (partial "func/get_icon" 32).RelPermalink }}" />
+<link rel="apple-touch-icon" type="image/png" href="{{ (partial "func/get_icon" 180).RelPermalink }}" />
+{{ end }}

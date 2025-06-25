@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+
+
+{{/* Generate page description. */}}
+{{ $desc := "" }}
+{{ if .Params.summary }}
+    {{ $desc = .Params.summary }}
+{{ else if .Params.abstract }}
+    {{ $desc = .Params.abstract }}
+{{ else if .IsPage }}
+    {{ $desc = .Summary }}
+{{ else if site.Params.marketing.seo.description }}
+    {{ $desc = site.Params.marketing.seo.description }}
+{{ else }}
+    {{ $desc = site.Title }}
+{{ end }}
+<meta name="description" content="{{ $desc }}" />
+
+
+
+
+
+{{ partial "essentials/style_head.html" . }}
+
+
+{{/*<link rel="icon" type="image/png"  href="{{ relLangURL "img/favicon.png" }}">*/}}
+
+<!-- favicon -->
+{{ partialCached "essentials/favicon" . }}
+
+
+
+
+{{ $title := "" }}
+{{ with .Params.seo.title }}
+    {{ $title = replace . "{brand}" site.Title }}
+{{ else }}
+    {{ $title = .Title | default site.Title }}
+    {{ if ne $title site.Title }}{{ $title = printf "%s | %s" $title site.Title }}{{ end }}
+{{ end }}
+<title>{{ $title  }}</title>
+

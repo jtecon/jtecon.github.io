@@ -1,0 +1,36 @@
+<!doctype html>
+
+{{- $language_code := site.LanguageCode | default "en-us" -}}
+{{/*<html lang="en-US">*/}}
+<html  lang="{{$language_code}}"  >
+  <head>
+    <!-- head (don't cache it) -->
+    {{ partial "essentials/head.html" . }}
+
+  </head>
+
+  <body  class="page-wrapper  {{ with .Params.the_page_id}} page_{{ . }} {{ end }}  ">
+
+
+    <div class="page-header">
+      {{ partial "essentials/header.html" . }}
+    </div>
+
+
+
+    <main class="page-body page-wrapper">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- footer -->
+
+
+    <div class="page-footer">
+      {{ partial "essentials/footer.html" . }}
+    </div>
+
+    <!-- script (always cache it) -->
+    {{/* partialCached "essentials/script_body_end.html" . */}}
+    {{ partial "essentials/script_body_end.html" . }}
+  </body>
+</html>

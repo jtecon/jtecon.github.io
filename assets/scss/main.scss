@@ -1,0 +1,196 @@
+$mobile_width: 780px;
+
+body {
+  font-family: Arial;
+  font-size: 16px;
+  color: #2a2a2a;
+}
+
+.header--fixed {
+  position: fixed;
+  z-index: 10;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.page-wrapper {
+  margin-top: 50px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 100%;
+}
+
+
+.d-inline-flex {
+  display: inline-flex ;
+}
+
+
+.navbar {
+  height: 70px;
+  background: #fff;
+  font-size: 1rem;
+  padding: 0 1rem;
+
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .navbar-toggler {
+    border: 0 !important;
+    position: relative;
+    z-index: 1030;
+    padding: .25rem 0;
+    font-size: 1.125rem;
+    line-height: 1;
+    background-color: transparent;
+    border-radius: .25rem;
+  }
+
+  .navbar-brand {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1030;
+    color: #2a2a2a;
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+
+
+  .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+
+  .nav-item {
+    .nav-link {
+      color: #b5c0d1;
+    }
+  }
+  .nav-link.active {
+    color: #415161;
+  }
+
+  .pc-view {
+    justify-content: center;
+    flex-grow: 1;
+    .navbar-brand {
+      font-size: 3.51rem;
+    }
+
+
+  }
+
+
+
+
+
+  // 大屏幕
+  @media (min-width: $mobile_width) {
+    .container-xl {
+      //flex-wrap: nowrap;
+    }
+  }
+
+
+  //手机
+  @media (max-width: $mobile_width) {
+    .page-wrapper {
+    }
+
+    .navbar {
+      height: 50px;
+    }
+
+    .navbar-brand-mobile-wrapper {
+      position: absolute;
+      left: 0;
+      right: 0;
+    }
+    .navbar-brand {
+      margin: 0 auto;
+    }
+
+    .navbar-collapse {
+      z-index: 1031 !important;
+      position: absolute;
+      left: 0;
+      top: 50px;
+      width: 100%;
+      background-color: #fff;
+      text-align: center !important;
+    }
+
+    .main-menu-item {
+      text-align: left !important;
+      padding-left: 0;
+
+      .nav-item {
+        padding: 10px 15px ;
+        .nav-link {
+          padding: 5px 15px ;
+        }
+      }
+    }
+
+
+
+
+  }
+
+
+}
+
+
+
+.homepage-main {
+  .about-title1 {
+    color: #8d2424;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// overrides
+@import "custom";
+
