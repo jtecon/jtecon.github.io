@@ -1,8 +1,6 @@
 ---
 title: "Research"
 
-
-
 working_papers:
 
   - title: "Drawing the Line: Historical Artificial Subnational Boundaries and Modern Regional Inequality"
