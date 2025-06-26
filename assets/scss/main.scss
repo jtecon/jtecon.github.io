@@ -7,7 +7,8 @@ body {
 }
 
 .header--fixed {
-  position: fixed;
+  //position: fixed;
+  position: relative;
   z-index: 10;
   right: 0;
   left: 0;
@@ -15,7 +16,7 @@ body {
 }
 
 .page-wrapper {
-  margin-top: 140px;
+  margin-top: 3.5rem;
   display: grid;
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 100%;
@@ -28,6 +29,20 @@ body {
 }
 
 
+a {
+  border-bottom: 1px dashed #546270;
+  color: #546270;
+  text-decoration: none;
+}
+
+
+hr.styled-hr {
+  //border-bottom: 1px solid #e6e9eb;
+   border-top: 1px solid rgba(0, 0, 0, 0.13);
+  opacity: 1;
+  margin: 2rem 0;
+}
+
 .navbar {
   //height: 70px;
   background: #fff;
@@ -39,6 +54,8 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  border-bottom: 2px solid #ecedef;
 
 
   .navbar-toggler {
@@ -64,6 +81,8 @@ body {
     font-size: 1.2rem;
     line-height: inherit;
     white-space: nowrap;
+
+    border-bottom: unset;
   }
 
 
@@ -73,7 +92,7 @@ body {
     align-items: center;
 
     padding: 0 0 1rem 0;
-    border-bottom: 2px solid #ecedef;
+
   }
 
 
@@ -90,7 +109,7 @@ body {
       font-size: 0.95rem;
     }
   }
-  .nav-link.active {
+  .nav-link.active,  .nav-link:hover {
     color: #415161;
   }
 
@@ -119,12 +138,6 @@ body {
 
   //手机
   @media (max-width: $mobile_width) {
-    .page-wrapper {
-      margin-top: 50px;
-    }
-
-
-
     .navbar-brand-mobile-wrapper {
       position: absolute;
       left: 0;
@@ -166,10 +179,28 @@ body {
 
 
 
+.about-title1 {
+  color: #8d2424;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.about-title2 {
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+
+.research-subtitle {
+  color: #8d2424;
+  font-size: 1.13rem;
+  font-weight: bold;
+  padding: 0.3rem 0 1rem 0;
+}
+
 .homepage-main {
-  .about-title1 {
-    color: #8d2424;
-  }
+
+
 
   ul {
     padding-left: 0;
@@ -177,13 +208,88 @@ body {
   li {
     list-style: none;
   }
+
+
+  .grey-button {
+    font-weight: bold;
+    font-size: 1.13rem;
+    padding: 0.5rem 1.61rem;
+    /* color: #8496b3; */
+    border-radius: unset;
+    margin: 1rem 0;
+
+  }
+
+
+  .btn-links {
+    border-bottom: 1px solid #e6e9eb;
+    margin: 1rem 0;
+    padding: 0 0 2rem 0;
+  }
 }
+
+.page-footer {
+  text-align: right;
+  border-top: 1px solid #e6e9eb;
+  padding: 20px 0;
+  color: #415161;
+  margin: 3.5rem 0 0 0 ;
+}
+
+
+.page-research {
+  .research-item {
+    padding: 0 0 1rem 0;
+  }
+}
+
+
+
+.page-links {
+  li {
+    list-style: none;
+  }
+  ul {
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul.trade-geography {
+
+    li:not(:last-child)::after {
+      content: ','; /* 在非最后一个列表项后面添加逗号 */
+      margin-right: 0.5rem; /* 可选：添加一些右边距以美化显示 */
+    }
+  }
+
+  ul.glossaries {
+    display: block;
+  }
+  .about-title2 {
+    font-weight: normal;
+    padding: 1rem 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //手机
 @media (max-width: $mobile_width) {
   .page-wrapper {
-    margin-top: 50px;
+    //margin-top: 50px;
   }
   .navbar {
     height: 50px;

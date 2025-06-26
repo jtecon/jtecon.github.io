@@ -1,82 +1,45 @@
 {{ define "main" }}
 
-    <div class="container homepage-main">
+<div class="container homepage-main">
 
-        <div class="about-title1"  >About Me</div>
-        <div>Name in Chinese: {{ .Params.name_cn }}</div>
+    <div class="about-title1">About Me</div>
+    <div>Name in Chinese: {{ .Params.name_cn }}</div>
 
-      <div class="about-title2" >Employment</div>
-      <ul>
-      {{ range .Params.employment }}
+    <div class="about-title2">Employment</div>
+    <ul>
+        {{ range .Params.employment }}
         <li>{{ . | markdownify | emojify }}</li>
-      {{ end }}
-      </ul>
+        {{ end }}
+    </ul>
 
-      <div class="about-title2" >Education</div>
-      <ul>
-      {{ range .Params.education }}
+    <div class="about-title2">Education</div>
+    <ul>
+        {{ range .Params.education }}
         <li>{{ . | markdownify | emojify }}</li>
-      {{ end }}
-      </ul>
+        {{ end }}
+    </ul>
 
-      <div class="about-title2" >Research Interests</div>
-      <ul>
-      {{ range .Params.research_interests }}
+    <div class="about-title2">Research Interests</div>
+    <ul>
+        {{ range .Params.research_interests }}
         <li>{{ . | markdownify | emojify }}</li>
-      {{ end }}
-      </ul>
+        {{ end }}
+    </ul>
 
-        <div class="about-title2" >Contact</div>
-        <div>Email: {{ .Params.email | markdownify | emojify }}</div>
-
-
-        <div class="cv-download">
-            <div class="btn-links">
-                <a class="btn btn-outline-primary btn-page-header btn-sm"
-                   href="{{ .Params.cv_link.url }}" target="_blank" >
-                    {{ .Params.cv_link.name }}
-                </a>
-
-        </div>
+    <div class="about-title2">Contact</div>
+    <div>Email: {{ .Params.email | emojify }}</div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="paragraph"><font size="3"><br></font><br><strong style="color:rgb(42, 42, 42)"><font size="3">Employment</font></strong><br><font
-                size="3">Associate Professor, 2019 -<br>Assistant Professor, 2015 - 2019<br>Central University of
-            Finance and Economics (CUFE)<br>Beijing, China<br><br><strong>Education</strong><br>Ph.D. in Economics,
-            UCLA, 2015<br>Master of Public Policy, UCLA, 2010<br>Bachelor of Engineering in Electronic Engineering,
-            Tsinghua University, 2008<br><br><strong>Research Interests</strong><br>International Trade; Economic
-            Geography; Chinese Economy<br><br><strong>Contact</strong><br>Email: jiting_econ@126.com; jiting@cufe.edu.cn</font>
-        </div>
-
-        <div style="text-align:left;">
-            <div style="height: 10px; overflow: hidden;"></div>
-            <a class="wsite-button wsite-button-small wsite-button-normal"
-               href="https://www.dropbox.com/s/2h5h31fkzihxohq/Ting%20Ji_CV.pdf?dl=0" target="_blank">
-                <span class="wsite-button-inner">Curriculum Vitae</span>
+    <div class="cv-download">
+        <div class="btn-links">
+            <a class="btn btn-outline-secondary grey-button"
+               href="{{ .Params.cv_link.url }}" target="_blank">
+                {{ .Params.cv_link.name }}
             </a>
-            <div style="height: 10px; overflow: hidden;"></div>
         </div>
-
-        <div>
-            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-            <hr class="styled-hr" style="width:100%;">
-            <div style="height: 20px; overflow: hidden; width: 100%;"></div>
-        </div>
-
-
     </div>
+
+
+</div>
 
 {{ end }}

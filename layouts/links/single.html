@@ -1,0 +1,111 @@
+{{ define "main" }}
+
+{{ $links := .Site.Data.links }}
+
+<div class="container page-links">
+
+
+  <ul class="glossaries">
+    {{ range $links.glossaries }}
+    <li class="link-item">
+
+      {{ with .url }}<a href="{{ . }}" class="tg-link">{{ end }}
+      {{ .name | markdownify | emojify }}
+      {{ with .url }}</a>{{ end }}
+
+        {{ with .sublinks }}
+            ({{ range . }}
+              <span class="link-item sub-link">
+                {{ with .url }}<a href="{{ . }}" class="tg-link">{{ end }}
+                {{ .name | markdownify | emojify }}
+                {{ with .url }}</a>{{ end }}
+              </span>
+            {{ end }})
+        {{ end }}
+
+    </li>
+    {{ end }}
+  </ul>
+
+  <hr class="styled-hr" />
+
+
+  <div class="about-title2">Personal Websites</div>
+
+
+
+
+  <div class="about-title2">Trade/Economic Geography</div>
+  <ul class="trade-geography">
+    {{ range $links.trade_economic_geography }}
+    <li class="link-item">
+      {{ with .url }}<a href="{{ . }}" class="tg-link">{{ end }}
+        {{ .name | markdownify | emojify }}
+      {{ with .url }}</a>{{ end }}
+
+    </li>
+    {{ end }}
+  </ul>
+
+
+
+
+
+  <div class="about-title2">Environmental Science/Economics</div>
+  <ul class="trade-geography">
+    {{ range $links.environmental_science_economics }}
+    <li class="link-item">
+      {{ with .url }}<a href="{{ . }}" class="tg-link">{{ end }}
+        {{ .name | markdownify | emojify }}
+      {{ with .url }}</a>{{ end }}
+
+    </li>
+    {{ end }}
+  </ul>
+
+
+
+
+
+  <div class="about-title2">Economics (general)</div>
+  <ul class="trade-geography">
+    {{ range $links.economics_general }}
+    <li class="link-item">
+      {{ with .url }}<a href="{{ . }}" class="tg-link">{{ end }}
+        {{ .name | markdownify | emojify }}
+      {{ with .url }}</a>{{ end }}
+
+    </li>
+    {{ end }}
+  </ul>
+
+
+
+
+  <div class="about-title2">Other Resources</div>
+  <ul class="trade-geography">
+    {{ range $links.other_resources }}
+    <li class="link-item">
+      {{ with .url }}<a href="{{ . }}" class="tg-link">{{ end }}
+        {{ .name | markdownify | emojify }}
+      {{ with .url }}</a>{{ end }}
+
+    </li>
+    {{ end }}
+  </ul>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+{{ end }}
