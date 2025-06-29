@@ -164,15 +164,6 @@ others:
     journal: "管理科学学报"
 
 
-research_grant:
-
-  - title: "国家自然科学基金青年项目，编号71703180"
-    title_link: ""
-    author_text: ""
-    year: 2018-2020
-    journal: ""
-
-
 
 
 ---
