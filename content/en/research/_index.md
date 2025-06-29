@@ -21,7 +21,7 @@ working_papers:
     title_link: ""
     author_text: "with Jing Cao, Naixing Huang, Yi Lu"
     year:
-    journal: ""
+    journal: "(working paper available upon request)"
 
 
   - title: "Global Value Chains and World Pollution Emissions"
