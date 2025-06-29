@@ -19,7 +19,7 @@ working_papers:
 
   - title: "International Climate Finance and Global Carbon Emissions: A Quantitative Economic Analysis"
     title_link: ""
-    author_text: "with Jing Cao, Naixing Huang, Yi Lu"
+    author_text: "with Jing Cao, Naixing Huang, Yi Lu (working paper available upon request.)"
     year:
     journal: "(working paper available upon request)"
 
