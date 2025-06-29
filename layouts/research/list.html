@@ -57,23 +57,6 @@
   </ul>
 
 
-  <div class="research-subtitle">主持基金项目（Research Grant）</div>
-  <ul>
-    {{ range .Params.research_grant }}
-    <li class="research-item">
-      {{ with .title_link }}<a href="{{ . }}" class="search-title-link">{{ end }}
-        {{ .title | markdownify | emojify }}
-      {{ with .title_link }}</a>{{ end }}
-
-      {{ with .author_text }}<span>({{ . | markdownify | emojify  }})</span>{{ end }}
-
-      {{ with .year }}<span>, {{ . | markdownify | emojify  }}</span>{{ end }}
-
-      {{ with .journal }}<em>, {{ . | markdownify | emojify  }}</em>{{ end }}
-
-    </li>
-    {{ end }}
-  </ul>
 
 
 
