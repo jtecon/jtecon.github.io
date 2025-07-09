@@ -1,4 +1,4 @@
-{{ define "main" }}More actions
+{{ define "main" }}
 
 
 
@@ -17,12 +17,14 @@
     {{ end }}
   </ul>
 
+
   <div class="research-subtitle">Publications</div>
   <ul>
     {{ range .Params.publications }}
     <li class="research-item">
       {{ with .title_link }}<a href="{{ . }}" class="search-title-link">{{ end }}
         {{ .title | markdownify | emojify }}{{ with .title_link }}</a>{{ end }},
+
 
       {{ with .author_text }}<span>{{ . | markdownify | emojify  }}</span>{{ end }}
 
@@ -33,6 +35,7 @@
     </li>
     {{ end }}
   </ul>
+
 
 
   <div class="research-subtitle">Others（以及中文发表）</div>
@@ -54,19 +57,11 @@
   </ul>
 
 
-  <div class="research-subtitle">主持基金项目（Research Grant）</div>
-  <ul>
-    {{ range .Params.research_grant }}
-    <li class="research-item">
-      {{ with .title_link }}<a href="{{ . }}" class="search-title-link">{{ end }}
-        {{ .title | markdownify | emojify }}
-      {{ with .title_link }}</a>{{ end }}
 
-      {{ with .author_text }}<span>({{ . | markdownify | emojify  }}), </span>{{ end }}
 
-      {{ with .year }}<span>{{ . | markdownify | emojify  }}  </span>{{ end }}
 
-      {{ with .journal }}<em>{{ . | markdownify | emojify  }}</em>{{ end }}
+</div>
 
-    </li>
-    {{ end }}
+
+
+{{ end }}
