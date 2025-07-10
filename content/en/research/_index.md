@@ -23,7 +23,12 @@ working_papers:
     year:
     journal: ""
 
-
+  - title: "Demography on Fertility and Migration: A Quantitative Spatial Analysis"
+    title_link: ""
+    author_text: "with Xiao Chen and Xiaofan Li"
+    year:
+    journal: ""
+    
   - title: "Global Value Chains and World Pollution Emissions"
     title_link: "https://www.researchgate.net/publication/373011687_Global_Value_Chains_and_World_Pollution_Emissions"
     author_text: "with Yuwan Duan, Yi Lu, and Zhe Zhang"
