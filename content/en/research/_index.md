@@ -25,7 +25,7 @@ working_papers:
 
   - title: "Demography on Fertility and Migration: A Quantitative Spatial Analysis"
     title_link: ""
-    author_text: "with Xiao Chen and Xiaofan Li"
+    author_text: "with Xiao Chen and Xiaofan Li (working paper available upon request)"
     year:
     journal: ""
     
