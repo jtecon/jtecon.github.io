@@ -3,13 +3,6 @@ title: "Research"
 
 working_papers:
 
-  - title: "Drawing the Line: Historical Artificial Subnational Boundaries and Modern Regional Inequality"
-    title_link: "https://www.researchgate.net/publication/391837179_Drawing_the_Line_Historical_Artificial_Subnational_Boundaries_and_Modern_Regional_Inequality#fullTextFileContent"
-    author_text: "with Pei Li, Yi Lu, Lu Peng"
-    year:
-    journal: ""
-
-
   - title: "Mega Transfer of Water: A Quantitative Spatial Economic Evaluation of Inter-Region Water Transfer"
     title_link: "https://www.researchgate.net/publication/391334274_Mega_Transfer_of_Water_A_Quantitative_Spatial_Economic_Evaluation_of_Inter-Region_Water_Transfer#fullTextFileContent"
     author_text: "with Cui Hu, Wenzhuo Lu, Yi Lu"
@@ -20,6 +13,12 @@ working_papers:
   - title: "International Climate Finance and Global Carbon Emissions: A Quantitative Economic Analysis"
     title_link: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5370920"
     author_text: "with Jing Cao, Naixing Huang, Yi Lu"
+    year:
+    journal: ""
+
+  - title: "Drawing the Line: Historical Artificial Subnational Boundaries and Modern Regional Inequality"
+    title_link: "https://www.researchgate.net/publication/391837179_Drawing_the_Line_Historical_Artificial_Subnational_Boundaries_and_Modern_Regional_Inequality#fullTextFileContent"
+    author_text: "with Pei Li, Yi Lu, Lu Peng"
     year:
     journal: ""
 
