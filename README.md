@@ -1,1 +1,1 @@
-# Ting Ji's Website
+# Website
