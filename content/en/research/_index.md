@@ -17,7 +17,7 @@ working_papers:
     journal: ""
 
   - title: "Drawing the Line: Historical Artificial Subnational Boundaries and Modern Regional Inequality"
-    title_link: "https://www.researchgate.net/publication/391837179_Drawing_the_Line_Historical_Artificial_Subnational_Boundaries_and_Modern_Regional_Inequality#fullTextFileContent"
+    title_link: "https://www.dropbox.com/scl/fi/8ivox3esybpmsundgz0ig/ProvincialBorders_Manuscript.pdf?rlkey=c52cbrszfs5x8u4c006mia3li&st=j6xzss80&dl=0"
     author_text: "with Pei Li, Yi Lu, Lu Peng"
     year:
     journal: ""
