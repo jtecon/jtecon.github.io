@@ -26,9 +26,9 @@
         {{ .title | markdownify | emojify }}{{ with .title_link }}</a>{{ end }},
 
 
-      {{ with .author_text }}<span>{{ . | markdownify | emojify  }}</span>{{ end }}
+      {{ with .author_text }}<span>{{ . | markdownify | emojify  }},</span>{{ end }}
 
-      {{ with .year }}<span> {{ . | markdownify | emojify  }}</span>{{ end }}
+      {{ with .year }}<span>,{{ . | markdownify | emojify  }},</span>{{ end }}
 
       {{ with .journal }}<em> {{ . | markdownify | emojify  }}</em>{{ end }}
 
