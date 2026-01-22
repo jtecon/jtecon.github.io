@@ -1,6 +1,4 @@
 ---
-name_cn: 纪珽
-
 employment:
   - "Associate Professor, 2019 -"
   - "Assistant Professor, 2015 - 2019"
