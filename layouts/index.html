@@ -5,7 +5,7 @@
     <div class="about-title1">About Me</div>
     <div>Name in Chinese: {{ .Params.name_cn }}</div>
 
-    <div class="about-title2">Employment</div>
+    <div class="about-title2">Academic Appointment</div>
     <ul>
         {{ range .Params.employment }}
         <li>{{ . | markdownify | emojify }}</li>
