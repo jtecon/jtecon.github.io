@@ -1,7 +1,6 @@
 ---
-name_cn: 纪珽
 
-employment:
+academic_appointment:
   - "Associate Professor, 2019 -"
   - "Assistant Professor, 2015 - 2019"
   - "Central University of Finance and Economics (CUFE) Beijing, China"
