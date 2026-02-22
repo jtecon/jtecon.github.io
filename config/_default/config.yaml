@@ -44,8 +44,14 @@ permalinks:
   publication_types: '/publication-type/:slug/'
 disableAliases: true
 outputs:
-  home: [HTML, RSS, JSON, Sitemap]
-  section: [HTML, RSS]
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - Sitemap
+  section:
+    - HTML
+    - RSS
 imaging:
   resampleFilter: lanczos
   quality: 75
