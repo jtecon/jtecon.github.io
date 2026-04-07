@@ -2,7 +2,6 @@
 title: "Research"
 
 working_papers:
-
  - title: "A Simple and Powerful Diagnostic Test for Binary Choice Models"
     title_link: "https://arxiv.org/abs/2603.27881"
     author_text: "with Laura Liu, Yulong Wang, Jiahe Xing"
