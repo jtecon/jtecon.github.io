@@ -3,6 +3,12 @@ title: "Research"
 
 working_papers:
 
+ - title: "A Simple and Powerful Diagnostic Test for Binary Choice Models"
+    title_link: "https://arxiv.org/abs/2603.27881"
+    author_text: "with Laura Liu, Yulong Wang, Jiahe Xing"
+    year:
+    journal: ""
+
   - title: "Mega Transfer of Water: A Quantitative Spatial Economic Evaluation of Inter-Region Water Transfer"
     title_link: "https://www.researchgate.net/publication/391334274_Mega_Transfer_of_Water_A_Quantitative_Spatial_Economic_Evaluation_of_Inter-Region_Water_Transfer#fullTextFileContent"
     author_text: "with Cui Hu, Wenzhuo Lu, Yi Lu"
