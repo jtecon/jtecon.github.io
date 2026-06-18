@@ -214,14 +214,11 @@ hr.styled-hr {
     font-weight: bold;
     font-size: 1.13rem;
     padding: 0.5rem 1.61rem;
-    /* color: #8496b3; */
     border-radius: unset;
     margin: 1rem 0;
-
   }
 
-
-  .btn-links {
+  .cv-download {
     border-bottom: 1px solid #e6e9eb;
     margin: 1rem 0;
     padding: 0 0 2rem 0;
@@ -241,35 +238,6 @@ hr.styled-hr {
   .research-item {
     padding: 0 0 1rem 0;
   }
-}
-
-
-
-.page-links {
-  li {
-    list-style: none;
-  }
-  ul {
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  ul.trade-geography {
-
-    li:not(:last-child)::after {
-      content: ','; /* 在非最后一个列表项后面添加逗号 */
-      margin-right: 0.5rem; /* 可选：添加一些右边距以美化显示 */
-    }
-  }
-
-  ul.glossaries {
-    display: block;
-  }
-  .about-title2 {
-    font-weight: normal;
-    padding: 1rem 0;
-  }
-
 }
 
 

@@ -47,7 +47,7 @@ working_papers:
 publications:
 
   - title: "Trade and Welfare Effects of Export Tax: Theory and Evidence from China's Incomplete Export VAT Rebate"
-    title_link: "https://www.researchgate.net/publication/334545330_Quantifying_the_Pollution_Haven_an_Existing_Effect_but_an_Unsupported_Hypothesis"
+    title_link: "https://www.sciencedirect.com/science/article/abs/pii/S0167268123002895"
     author_text: "with Eric Bond, Yuwan Duan, and Yi Lu"
     year: 2023
     journal: "Journal of Economic Behavior & Organization"
