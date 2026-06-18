@@ -16,10 +16,6 @@ research_interests:
 
 email: "jiting_econ@126.com; jiting@cufe.edu.cn"
 
-cv_link: 
-  url: "file/cv.pdf"
-  name: "Curriculum Vitae"
-
 
 
 ---
