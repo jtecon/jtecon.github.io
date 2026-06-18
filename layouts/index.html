@@ -31,14 +31,6 @@
     <div>Email: {{ .Params.email | emojify }}</div>
 
 
-    <div class="cv-download">
-        <a class="btn btn-outline-secondary grey-button"
-           href="{{ .Params.cv_link.url | relURL }}" target="_blank" rel="noopener">
-            {{ .Params.cv_link.name }}
-        </a>
-    </div>
-
-
 </div>
 
 {{ end }}
