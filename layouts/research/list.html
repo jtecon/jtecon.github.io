@@ -38,28 +38,6 @@
 
 
 
-  <div class="research-subtitle">Others（以及中文发表）</div>
-  <ul>
-    {{ range .Params.others }}
-    <li class="research-item">
-      {{ with .title_link }}<a href="{{ . }}" class="search-title-link">{{ end }}
-        {{ .title | markdownify | emojify }}{{ with .title_link }}</a>{{ end }}
-
-
-      {{ with .author_text }}<span>({{ . | markdownify | emojify  }}), </span>{{ end }}
-
-      {{ with .year }}<span>{{ . | markdownify | emojify  }}, </span>{{ end }}
-
-      {{ with .journal }}<em>{{ . | markdownify | emojify  }}</em>.{{ end }}
-
-    </li>
-    {{ end }}
-  </ul>
-
-
-
-
-
 </div>
 
 

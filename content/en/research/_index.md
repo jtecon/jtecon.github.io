@@ -69,16 +69,6 @@ publications:
     journal: "The B.E. Journal of Macroeconomics (Advances)"
 
 
-
-others:
-
-  - title: "代际间的职业流动、劳动力合理配置与中国的劳动生产率"
-    title_link: ""
-    author_text: "第一作者；合作者： 张国峰"
-    year: 2021
-    journal: "世界经济"
-
-
 ---
 
 
